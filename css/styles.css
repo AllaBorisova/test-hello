@@ -1,6 +1,14 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 *,
 *::after,
 *::before {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 html {
@@ -63,8 +71,14 @@ textarea {
   display: block;
 }
 .header__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .hamburger {
@@ -77,6 +91,8 @@ textarea {
   height: 2px;
   width: 100%;
   background: #d3b47f;
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
   transition: all 0.25s ease;
 }
 .hamburger span:first-child {
@@ -98,7 +114,11 @@ textarea {
 .phone {
   color: #fff;
   font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   gap: 11px;
   font-weight: 400;
@@ -132,9 +152,16 @@ textarea {
   margin-bottom: 40px;
 }
 .section-hero__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   gap: 15px;
 }
@@ -142,12 +169,20 @@ textarea {
   width: 270px;
   height: 100px;
   background: #3a4574;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   font-size: 18px;
   color: #fff;
   font-weight: 500;
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
   transition: all 0.25s ease;
   border: none;
   cursor: pointer;
@@ -158,23 +193,38 @@ textarea {
 
 /*socials*/
 .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   gap: 25px;
   color: #fff;
 }
 
 .socials__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   width: 48px;
   height: 48px;
 
   border: 1px solid #fff;
   border-radius: 50%;
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
   transition: all 0.25s ease;
   font-weight: 600;
 }
@@ -189,8 +239,13 @@ textarea {
 
 /*nav*/
 .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   gap: 45px;
   padding: 0;
@@ -200,6 +255,8 @@ textarea {
 .nav-list__link {
   font-weight: 500;
   color: #fff;
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
   transition: all 0.25s ease;
 }
 .nav-list__link:hover {
@@ -213,17 +270,29 @@ textarea {
   background: #fff;
 }
 .section-info__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 32px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 .section-info__imgs {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
   gap: 22px;
   position: relative;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 .section-info__imgs:before {
@@ -262,16 +331,25 @@ textarea {
   margin-bottom: 15px;
 }
 .info__desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 12px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   font-size: 18px;
   line-height: 1.7;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 .dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 12px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .dots__item {
@@ -349,9 +427,16 @@ textarea {
   padding-bottom: 40px;
 }
 .footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   gap: 10px;
 }
@@ -411,10 +496,14 @@ textarea {
   top: 22px;
 }
 .close span:first-child {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   left: 0px;
 }
 .close span:last-child {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
   left: 0px;
 }
@@ -431,7 +520,13 @@ textarea {
   top: 0px;
   left: 0px;
 
+  -webkit-box-align: center;
+
+  -ms-flex-align: center;
+
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -443,6 +538,8 @@ textarea {
   z-index: 11;
 }
 .open-modal .modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .modal__close {
@@ -524,7 +621,12 @@ textarea {
     text-align: center;
   }
   .info__desc {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
   .section-slider {
@@ -545,10 +647,14 @@ textarea {
     font-size: 18px;
   }
   .footer__wrapper {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
   .section-info__imgs {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
   }
   .swiper-button-prev,
